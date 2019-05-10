@@ -1,6 +1,6 @@
-@font-face{
-    font-family: "GoogleSans";
-    src: url("../fonts/GoogleSans-Regular.ttf") format("truetype");
+@font-face {
+  font-family: "GoogleSans";
+  src: url("../fonts/GoogleSans-Regular.ttf") format("truetype");
 }
 
 body {
@@ -11,16 +11,25 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background: #ECE9E6;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6); /*  Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #ece9e6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #ece9e6
+  ); /*  Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #ece9e6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-#sigaar svg{
+#sigaar svg,
+#kiwi svg {
   width: 100%;
 }
 
-h1{
+h1 {
   text-align: center;
   font-family: "GoogleSans";
   font-size: 80px;
