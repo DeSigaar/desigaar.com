@@ -1,0 +1,29 @@
+@font-face{
+    font-family: "GoogleSans";
+    src: url("../fonts/GoogleSans-Regular.ttf") format("truetype");
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  display: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #ECE9E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6); /*  Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#sigaar svg{
+  width: 100%;
+}
+
+h1{
+  text-align: center;
+  font-family: "GoogleSans";
+  font-size: 80px;
+  margin-top: 100px;
+  color: #424242;
+}
