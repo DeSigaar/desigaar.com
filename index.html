@@ -11,9 +11,8 @@
     <link rel="manifest" href="./manifest.json" />
     <title>De Sigaar | Development & Design</title>
     <link rel="stylesheet" href="./inc/css/styles.css" />
-    <link rel="stylesheet" href="./inc/css/grid.css" />
   </head>
-  <body>
+  <body id="body">
     <header>
       <img
         src="./assets/vectors/DeSigaar-Sigaar.svg"
@@ -25,19 +24,19 @@
     </header>
     <main class="centered desigaar">
       <div class="row">
-        <div class="col s4">
+        <div id=>
           <h2>De Sigaar Family</h2>
           <ul>
             <li><a href="/kiwi/">Kiwi</a></li>
           </ul>
         </div>
-        <div class="col s4">
+        <div>
           <h2>GitHub</h2>
           <ul>
             <li><a href="https://github.com/de-sigaar/">de-sigaar</a></li>
           </ul>
         </div>
-        <div class="col s4">
+        <div>
           <h2>Email</h2>
           <ul>
             <li><a href="mailto:info@desigaar.com">info@desigaar.com</a></li>
@@ -45,5 +44,7 @@
         </div>
       </div>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+    <script src="./inc/p5sketch.js"></script>
   </body>
 </html>
