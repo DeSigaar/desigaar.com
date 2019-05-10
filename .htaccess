@@ -3,4 +3,4 @@ RewriteEngine On
 # Fallback all other routes to index.html
 RewriteRule ^ /index.html [L]
 
-ErrorDocument 404 /
+ErrorDocument 404 /index.html
