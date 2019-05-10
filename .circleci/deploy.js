@@ -11,16 +11,19 @@ var config = {
   deleteRemote: true,
   include: ["*"],
   exlude: [
-    "/node_modules",
-    ".gitignore",
     "/.circleci",
-    "package - lock.json",
+    "/.git",
+    "/.vscode",
+    "/node_modules",
+    ".editorconfig",
+    ".gitignore",
     "package.json",
-    "/.git"
+    "package-lock.json",
+    "README.md"
   ]
 };
 
-ftpDeploy.deploy(config, function(err) {
+ftpDeploy.deploy(config, err => {
   if (err) console.log(err);
   else console.log("Uploaded to server");
 });

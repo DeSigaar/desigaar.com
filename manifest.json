@@ -1,0 +1,8 @@
+{
+  "short_name": "De Sigaar",
+  "name": "De Sigaar | Development & Design",
+  "start_url": "./",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff"
+}

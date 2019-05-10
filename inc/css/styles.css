@@ -3,20 +3,19 @@
   src: url("../fonts/GoogleSans-Regular.ttf") format("truetype");
 }
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   width: 100vw;
-  height: 100vh;
-  display: flex;
-  display: row;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+  min-height: 100vh;
+  overflow-x: hidden;
   background: #ece9e6; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #ffffff,
-    #ece9e6
-  ); /*  Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #ffffff, #ece9e6); /*  Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
     #ffffff,
@@ -24,15 +23,96 @@ body {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-#sigaar svg,
-#kiwi svg {
+body,
+body * {
+  margin: 0;
+  padding: 0;
+  font-family: "GoogleSans";
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 75vh;
+}
+
+main {
+  margin: 1vh auto;
+  max-width: 1280px;
+  min-height: 23vh;
+  width: 90%;
+}
+@media only screen and (min-width: 601px) {
+  main {
+    width: 85%;
+  }
+}
+@media only screen and (min-width: 993px) {
+  main {
+    width: 70%;
+  }
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rounded {
+  border-radius: 100%;
+}
+
+main.centered > .row {
   width: 100%;
 }
 
 h1 {
   text-align: center;
-  font-family: "GoogleSans";
-  font-size: 80px;
+  font-size: calc(4vw + 3vh);
   margin-top: 100px;
   color: #424242;
+}
+
+h2 {
+  font-size: calc(1.25vw + 1.25vh);
+  margin-bottom: 10px;
+  color: #424242;
+}
+
+p {
+  font-size: 20px;
+  color: #424242;
+}
+
+ul {
+  list-style: none;
+}
+
+.desigaar a {
+  font-size: calc(1vw + 1vh);
+}
+
+a {
+  color: blue;
+  transition: 0.1s ease-in-out opacity;
+}
+a:active,
+a:hover,
+a:focus {
+  color: blue;
+  opacity: 0.7;
+}
+
+.vectorLogo {
+  width: 90vw;
+  max-width: 400px;
+  height: auto;
+  align-self: center;
+}
+
+.sideImage {
+  width: 100%;
 }
