@@ -1,0 +1,26 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:latest
+    steps:
+      - checkout
+      - run:
+          name: Install packages
+          command: npm install
+      - run:
+          name: Upload to server
+          command: node .circleci/deploy.js
+      - run:
+          name: Completed
+          command: echo "Project deployed"
+
+workflows:
+  version: 2
+  deploy:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only:
+                - master
