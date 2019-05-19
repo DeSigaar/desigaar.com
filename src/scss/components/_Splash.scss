@@ -1,0 +1,50 @@
+.splash {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  background: -webkit-linear-gradient(45deg, $light-blue 15%, $dark-blue 85%);
+  background: linear-gradient(45deg, $light-blue 15%, $dark-blue 85%);
+
+  .content {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 5vh 0;
+
+      img {
+        width: calc(15vw + 15vh);
+        max-width: 400px;
+        height: auto;
+        align-self: center;
+      }
+      h1 {
+        color: $white;
+        font-size: calc(3vw + 3vh);
+        margin-top: 4rem;
+      }
+    }
+  }
+
+  .divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+
+    .polygon {
+      fill: $white;
+    }
+    .polygon2 {
+      opacity: 0.5;
+    }
+  }
+}

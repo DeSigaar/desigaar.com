@@ -1,0 +1,15 @@
+@mixin font($font-family, $font-file, $font-weight) {
+  @font-face {
+    font-family: $font-family;
+    src: url($font-file+".eot");
+    src: url($font-file+".eot?#iefix") format("embedded-opentype"), url($font-file+".woff") format("woff"),
+      url($font-file+".ttf") format("truetype"), url($font-file+".svg#aller") format("svg");
+    font-weight: $font-weight;
+    font-style: normal;
+  }
+}
+
+@include font("ProductSans", "../assets/fonts/ProductSans/Regular/ProductSansRegular", normal);
+@include font("ProductSans-Bold", "../assets/fonts/ProductSans/Bold/ProductSansBold", bold);
+@include font("ProductSans-Italic", "../assets/fonts/ProductSans/Italic/ProductSansItalic", normal);
+@include font("ProductSans-BoldItalic", "../assets/fonts/ProductSans/BoldItalic/ProductSansBoldItalic", bold);

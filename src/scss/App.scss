@@ -1,0 +1,31 @@
+@import "./global/Fonts";
+@import "./global/Variables";
+@import "./global/Classes";
+@import "./global/Default";
+
+@import "./components/Splash";
+@import "./components/NavBar";
+@import "./components/Button";
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+.row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.desigaar .row > div {
+  margin: 5px 0;
+}
+
+h2 {
+  color: $grey-darken-3;
+  font-family: "ProductSans-Bold";
+  font-size: calc(1.25vw + 1.25vh);
+}
