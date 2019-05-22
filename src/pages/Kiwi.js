@@ -1,14 +1,15 @@
 import React, { Component } from "react";
 
-import { SplashContent } from "../components/common";
+import { Splash } from "../components/common";
 
 export default class Kiwi extends Component {
   render() {
     return (
       <>
-        <SplashContent title="De Sigaar x Kiwi" image="DeSigaar-Kiwi" />
+        <Splash title="Kiwi" subTitle="Welcome to De Sigaar family" image="DeSigaar-Kiwi" name="De Sigaar x Kiwi" />
         <main>
-          <div className="row">
+          <section className="container">
+            <h1>About</h1>
             <p>
               De samenwerking tussen De Sigaar en Kiwi is tot stand gekomen nadat beide groepen hun wapens hebben
               neergelegd. Eerst waren de groepen argwanend naar elkaar en wisten ze niet wat ze aan elkaar hadden. Heden
@@ -18,8 +19,8 @@ export default class Kiwi extends Component {
               tussendoor. Dit alles zorgt voor een fijne dynamiek en maakt dat deze groepen door dit
               samenwerkingsverband het beste uit henzelf en uit de samenwerking kunnen halen.
             </p>
-            <img src="../assets/images/kiwi.jpg" alt="Kiwi logo" className="sideImage rounded" />
-          </div>
+            <img src="./assets/images/kiwi.jpg" alt="Kiwi logo" className="sideImage rounded" />
+          </section>
         </main>
       </>
     );

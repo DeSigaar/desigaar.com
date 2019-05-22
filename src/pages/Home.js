@@ -7,40 +7,34 @@ export default class Home extends Component {
   render() {
     return (
       <>
+        {/* Add Helmet */}
         <Splash />
-        <main className="centered desigaar">
-          <div className="row">
-            <div>
-              <h2>De Sigaar Family</h2>
-              <ul>
-                <li>
-                  <Link to="/kiwi/">
-                    <span>Kiwi</span>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h2>GitHub</h2>
-              <ul>
-                <li>
-                  <a href="https://github.com/de-sigaar/">
-                    <span>de-sigaar</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h2>Email</h2>
-              <ul>
-                <li>
-                  <a href="mailto:info@desigaar.com">
-                    <span>info@desigaar.com</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+        <main>
+          <section className="container">
+            <h1>About</h1>
+            <p>Who are these &apos;Sigaren&apos; and what do they do? You might as well continue reading</p>
+          </section>
+          <section className="container">
+            <h1>Projects</h1>
+            <p>What kind of projects did you guys do? They are down here!</p>
+            <a href="https://github.com/de-sigaar/">
+              <span>de-sigaar</span>
+            </a>
+          </section>
+          <section className="container">
+            <h1>Family</h1>
+            <p>Seems we have expanded within 9 months? Check our family</p>
+            <Link to="/kiwi/">
+              <span>Kiwi</span>
+            </Link>
+          </section>
+          <section className="container">
+            <h1>Contact</h1>
+            <p>Interested in contacting us? Go ahead!</p>
+            <a href="mailto:info@desigaar.com">
+              <span>info@desigaar.com</span>
+            </a>
+          </section>
         </main>
       </>
     );

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Space+Mono&display=swap");
+
 @mixin font($font-family, $font-file, $font-weight) {
   @font-face {
     font-family: $font-family;
@@ -9,7 +11,7 @@
   }
 }
 
-@include font("ProductSans", "../assets/fonts/ProductSans/Regular/ProductSansRegular", normal);
-@include font("ProductSans-Bold", "../assets/fonts/ProductSans/Bold/ProductSansBold", bold);
-@include font("ProductSans-Italic", "../assets/fonts/ProductSans/Italic/ProductSansItalic", normal);
-@include font("ProductSans-BoldItalic", "../assets/fonts/ProductSans/BoldItalic/ProductSansBoldItalic", bold);
+@include font("Product Sans", "../assets/fonts/ProductSans/Regular/ProductSansRegular", normal);
+@include font("Product Sans Bold", "../assets/fonts/ProductSans/Bold/ProductSansBold", bold);
+@include font("Product Sans Italic", "../assets/fonts/ProductSans/Italic/ProductSansItalic", normal);
+@include font("Product Sans Bold Italic", "../assets/fonts/ProductSans/BoldItalic/ProductSansBoldItalic", bold);

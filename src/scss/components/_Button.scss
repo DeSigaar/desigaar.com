@@ -6,7 +6,7 @@
   display: block;
   position: relative;
   border-radius: 0.1rem;
-  transition: padding 0.2s ease-out;
+  transition: padding 0.15s ease-out;
   background: transparent;
 
   &:focus {
@@ -29,8 +29,8 @@
     transition: transform 0.15s ease-out, -webkit-transform 0.15s ease-out;
   }
   > span {
-    font-family: "ProductSans-Bold";
-    color: $dark-blue !important;
+    font-family: $SpaceMono;
+    color: $dark-gradient !important;
     display: inherit;
     position: relative;
     z-index: 1;

@@ -2,8 +2,9 @@
   position: relative;
   width: 100%;
   min-height: 80vh;
-  background: -webkit-linear-gradient(45deg, $light-blue 15%, $dark-blue 85%);
-  background: linear-gradient(45deg, $light-blue 15%, $dark-blue 85%);
+  background: $dark-gradient;
+  // background: -webkit-linear-gradient(45deg, $light-gradient 25%, $dark-gradient 75%);
+  // background: linear-gradient(45deg, $light-gradient 25%, $dark-gradient 75%);
 
   .content {
     height: 80vh;
@@ -24,9 +25,17 @@
         align-self: center;
       }
       h1 {
+        font-family: $SpaceMono;
+        font-weight: bold;
         color: $white;
         font-size: calc(3vw + 3vh);
         margin-top: 4rem;
+      }
+      h4 {
+        font-family: $ProductSans;
+        color: $white;
+        font-size: calc(1vw + 1vh);
+        margin-top: 1rem;
       }
     }
   }

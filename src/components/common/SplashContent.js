@@ -4,11 +4,12 @@ import PropTypes from "prop-types";
 export default class SplashContent extends Component {
   static propTypes = {
     title: PropTypes.string,
+    subTitle: PropTypes.string,
     image: PropTypes.string
   };
 
   render() {
-    const { title, image } = this.props;
+    const { title, subTitle, image } = this.props;
     return (
       <div className="content container">
         <div>
@@ -20,6 +21,7 @@ export default class SplashContent extends Component {
             />
           )}
           {title && <h1>{title}</h1>}
+          {subTitle && <h4>{subTitle}</h4>}
         </div>
       </div>
     );

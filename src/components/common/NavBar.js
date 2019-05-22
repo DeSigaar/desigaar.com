@@ -6,15 +6,17 @@ import { Button } from "../common";
 
 export default class NavBar extends Component {
   static propTypes = {
-    image: PropTypes.string
+    image: PropTypes.string,
+    name: PropTypes.string
   };
 
   static defaultProps = {
-    image: "DeSigaar-Sigaar"
+    image: "DeSigaar-Sigaar",
+    name: "De Sigaar"
   };
 
   render() {
-    const { image } = this.props;
+    const { image, name } = this.props;
 
     return (
       <div className="navbar">
@@ -26,6 +28,7 @@ export default class NavBar extends Component {
                 onError={() => (this.src = `../../assets/images/${image}.png`)}
                 alt={image}
               />
+              <div>{name}</div>
             </Link>
             <div>
               <Link to="/#about" className="menuLink">
