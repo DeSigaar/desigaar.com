@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Space+Mono&display=swap");
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css);
 
 @mixin font($font-family, $font-file, $font-weight) {
   @font-face {
@@ -15,3 +16,8 @@
 @include font("Product Sans Bold", "../assets/fonts/ProductSans/Bold/ProductSansBold", bold);
 @include font("Product Sans Italic", "../assets/fonts/ProductSans/Italic/ProductSansItalic", normal);
 @include font("Product Sans Bold Italic", "../assets/fonts/ProductSans/BoldItalic/ProductSansBoldItalic", bold);
+
+@font-face {
+  font-family: "Droid Sans Mono";
+  src: url(../assets/fonts/DroidSansMono.ttf) format("truetype");
+}
