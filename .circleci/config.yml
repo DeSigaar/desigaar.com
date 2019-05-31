@@ -9,10 +9,13 @@ jobs:
           name: Install packages
           command: npm install
       - run:
+          name: Build project
+          command: npm build
+      - run:
           name: Upload to server
           command: node .circleci/deploy.js
       - run:
-          name: Completed
+          name: Completed deploying
           command: echo "Project deployed"
 
 workflows:

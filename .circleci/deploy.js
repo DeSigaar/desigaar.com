@@ -6,21 +6,10 @@ var config = {
   password: process.env.FTPPASS,
   host: process.env.FTPHOST,
   port: 21,
-  localRoot: __dirname + "/../",
+  localRoot: __dirname + "/../public",
   remoteRoot: process.env.FTPPATH,
   deleteRemote: true,
-  include: ["*"],
-  exlude: [
-    "/.circleci",
-    "/.git",
-    "/.vscode",
-    "/node_modules",
-    ".editorconfig",
-    ".gitignore",
-    "package.json",
-    "package-lock.json",
-    "README.md"
-  ]
+  include: ["*"]
 };
 
 ftpDeploy.deploy(config, err => {
