@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+import { Link } from "gatsby";
 
-import { Button } from "../common";
+import { Button } from "./";
 
 export default class NavBar extends Component {
   static propTypes = {

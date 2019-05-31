@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-import { NavBar, SplashContent } from "../common";
+import { NavBar, SplashContent } from "./";
 
 import { Divider } from "../../assets/vectors";
 

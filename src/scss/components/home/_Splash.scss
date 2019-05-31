@@ -1,0 +1,61 @@
+#Home {
+  .splash {
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    background: $dark-gradient;
+    // background: -webkit-linear-gradient(45deg, $light-gradient 25%, $dark-gradient 75%);
+    // background: linear-gradient(45deg, $light-gradient 25%, $dark-gradient 75%);
+
+    .content {
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5vh 0;
+
+        img {
+          width: calc(15vw + 15vh);
+          max-width: 400px;
+          height: auto;
+          align-self: center;
+        }
+        h1 {
+          font-family: $DroidSansMono;
+          font-weight: bold;
+          color: $white;
+          font-size: calc(3vw + 3vh);
+          margin-top: 4rem;
+        }
+        h4 {
+          font-family: $ProductSans;
+          color: $white;
+          font-size: calc(1vw + 1vh);
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    .divider {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: auto;
+      max-height: 200px;
+
+      .polygon {
+        fill: $light-grey;
+      }
+      .polygon2 {
+        opacity: 0.5;
+      }
+    }
+  }
+}
