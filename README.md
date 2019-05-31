@@ -1,3 +1,3 @@
 # DeSigaar.com
 
-Vind onze website op [desigaar.com](https://desigaar.com/)!
+Find our website on [desigaar.com](http://desigaar.com/)!
