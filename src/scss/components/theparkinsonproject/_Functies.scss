@@ -1,0 +1,55 @@
+#TheParkinsonProject {
+  #functies {
+    width: 100%;
+    height: auto;
+    background: $grey-lighten-4;
+    padding: 5vh 0;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      * {
+        font-family: $Quicksand;
+      }
+      > div {
+        > h1 {
+          font-family: $QuicksandBold;
+          font-size: calc(1.5vw + 1.5vh);
+          letter-spacing: -0.1rem;
+          margin-bottom: 2vh;
+        }
+      }
+      div.functies {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 5vh;
+
+        > div {
+          width: 50%;
+          height: 176px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          img {
+            width: 150px;
+            height: 150px;
+          }
+
+          > div {
+            margin-left: 20px;
+            padding-right: 50px;
+
+            h2 {
+              font-family: $QuicksandBold;
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

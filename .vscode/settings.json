@@ -8,7 +8,7 @@
   "eslint.enable": true,
   "eslint.autoFixOnSave": true,
   "explorer.sortOrder": "default",
-  "files.autoSave": "afterDelay",
+  "files.autoSave": "onFocusChange",
   "files.eol": "\n",
   "files.exclude": {
     "**/.DS_Store": true,

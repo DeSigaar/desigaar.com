@@ -1,16 +1,26 @@
-@mixin font($font-family, $font-file, $font-weight) {
+@mixin font($font-family, $font-file) {
   @font-face {
     font-family: $font-family;
     src: url($font-file+".eot");
     src: url($font-file+".eot?#iefix") format("embedded-opentype"), url($font-file+".woff") format("woff"),
       url($font-file+".ttf") format("truetype"), url($font-file+".svg#aller") format("svg");
-    font-weight: $font-weight;
-    font-style: normal;
+
   }
 }
 
-@include font("Product Sans", "../assets/fonts/ProductSans/ProductSansRegular", normal);
-@include font("Product Sans Bold", "../assets/fonts/ProductSans/ProductSansBold", bold);
-@include font("Product Sans Italic", "../assets/fonts/ProductSans/ProductSansItalic", normal);
-@include font("Product Sans Bold Italic", "../assets/fonts/ProductSans/ProductSansBoldItalic", bold);
-@include font("Droid Sans Mono", "../assets/fonts/DroidSans/DroidSansMono", normal);
+// Product Sans
+@include font("Product Sans", "../assets/fonts/ProductSans/ProductSansRegular");
+@include font("Product Sans Bold", "../assets/fonts/ProductSans/ProductSansBold");
+@include font("Product Sans Italic", "../assets/fonts/ProductSans/ProductSansItalic");
+@include font("Product Sans Bold Italic", "../assets/fonts/ProductSans/ProductSansBoldItalic");
+
+// Droid Sans
+@include font("Droid Sans Mono", "../assets/fonts/DroidSans/DroidSansMono");
+
+// Quicksand
+@include font("Quicksand", "../assets/fonts/Quicksand/Quicksand-Regular");
+@include font("Quicksand Bold", "../assets/fonts/Quicksand/Quicksand-Bold");
+@include font("Quicksand Bold Italic", "../assets/fonts/Quicksand/Quicksand-BoldItalic");
+@include font("Quicksand Italic", "../assets/fonts/Quicksand/Quicksand-Italic");
+@include font("Quicksand Light", "../assets/fonts/Quicksand/Quicksand-Light");
+@include font("Quicksand Light Italic", "../assets/fonts/Quicksand/Quicksand-LightItalic");

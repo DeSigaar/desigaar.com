@@ -3,6 +3,13 @@ import React, { Component } from "react";
 import "../scss/App.scss";
 
 import { SEO } from "../components/common";
+import {
+  Header,
+  Over,
+  Probeer,
+  Functies,
+  Nieuwsbrief
+} from "../components/theparkinsonproject";
 
 export default class TheParkinsonProject extends Component {
   render() {
@@ -13,10 +20,17 @@ export default class TheParkinsonProject extends Component {
           title="The Parkinson Project"
           description="The Parkinson Project verbetert het leven van mensen met Parkinson"
         />
-        <img
-          src={require("../assets/images/website.png")}
-          style={{ width: "100%", height: "auto" }}
-        />
+        <Header />
+        <div className="rest">
+          <img
+            src={require("../assets/vectors/theparkinsonproject/Mockup.svg")}
+            className="mockup"
+          />
+          <Over />
+          <Probeer />
+          <Functies />
+          <Nieuwsbrief />
+        </div>
       </div>
     );
   }

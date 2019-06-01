@@ -1,5 +1,8 @@
 /* eslint-disable camelcase */
 module.exports = {
+  siteMetadata: {
+    siteUrl: "http://desigaar.com/"
+  },
   plugins: [
     {
       resolve: "gatsby-plugin-manifest",
@@ -9,7 +12,7 @@ module.exports = {
         start_url: "/",
         background_color: "#282828",
         theme_color: "#282828",
-        display: "minimal-ui",
+        display: "standalone",
         icon: "src/assets/icons/DeSigaar-Sigaar.png"
       }
     },
@@ -20,6 +23,13 @@ module.exports = {
         https: false,
         www: false,
         host: "desigaar.com"
+      }
+    },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "http://desigaar.com/",
+        policy: [{ userAgent: "*", allow: "/" }]
       }
     },
     "gatsby-plugin-react-helmet",

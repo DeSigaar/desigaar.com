@@ -8,7 +8,8 @@ export default class SEO extends Component {
     title: PropTypes.string,
     description: PropTypes.string,
     author: PropTypes.string,
-    meta: PropTypes.arrayOf(PropTypes.object)
+    meta: PropTypes.arrayOf(PropTypes.object),
+    children: PropTypes.any
   };
 
   static defaultProps = {
@@ -20,7 +21,7 @@ export default class SEO extends Component {
   };
 
   render() {
-    const { lang, title, description, author, meta } = this.props;
+    const { lang, title, description, author, meta, children } = this.props;
 
     return (
       <Helmet
@@ -62,7 +63,9 @@ export default class SEO extends Component {
             content: description
           }
         ].concat(meta)}
-      />
+      >
+        {children}
+      </Helmet>
     );
   }
 }

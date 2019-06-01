@@ -1,3 +1,6 @@
+
+
+
 @import "./global/Fonts";
 @import "./global/Variables";
 @import "./global/Classes";
@@ -7,4 +10,8 @@
 @import "./components/home/NavBar";
 @import "./components/home/Button";
 
+@import "./components/theparkinsonproject/General";
+
 @import "./NeedForRefactoring";
+
+body.swal2-shown { overflow-y: none !important; }
