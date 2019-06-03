@@ -23,7 +23,7 @@ export default class TheParkinsonProject extends Component {
         <Header />
         <div className="rest">
           <img
-            src={require("../assets/vectors/theparkinsonproject/Mockup.svg")}
+            src={require("../assets/images/theparkinsonproject/Mockup.png")}
             className="mockup"
           />
           <Over />
