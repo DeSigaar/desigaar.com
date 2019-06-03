@@ -13,14 +13,14 @@ export default class Over extends Component {
           <div>
             <h1>Gemakkelijk overzicht</h1>
             <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua accusam justo.
+              De app is zo gemaakt dat het duidelijk en overzichtelijk is voor
+              iedereen. Dit is belangrijk zodat Parkinsonpatiënten makkelijk de
+              app kunnen gebruiken maar ook de omgeving van de Parkinsonpatiënt
             </p>
             <p>
-              At vero eos et accusam et justo duo dolores et ea rebum. Stet
-              clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-              dolor sit amet. Lorem ipsum dolor sit amet, consetetur.
+              We maken gebruik van een consistent design en gecategoriseerde
+              kleuren. Het schema zorgt ervoor dat de gebruiker een duidelijk
+              beeld hebt van alle activiteiten door de dag heen.
             </p>
             <a
               onClick={() =>
@@ -43,14 +43,14 @@ export default class Over extends Component {
           <div>
             <h1>Hulp van anderen</h1>
             <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua accusam justo.
+              Bij de community kun je hulp krijgen van verschillende andere
+              Parkinsonpatiënten. Binnen deze community kan je vragen stellen of
+              beantwoorden.
             </p>
             <p>
-              At vero eos et accusam et justo duo dolores et ea rebum. Stet
-              clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-              dolor sit amet. Lorem ipsum dolor sit amet, consetetur.
+              Je kan hier samen met andere Parkinsonpatiënten samen discussiëren
+              over problemen waar je tegenaan loopt, hulpmiddelen die je wilt
+              delen, etc.
             </p>
             <a
               onClick={() =>

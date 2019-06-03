@@ -18,8 +18,8 @@ export default class Functies extends Component {
               <div>
                 <h2>Medicijnen bijhouden</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et
+                  Houd bij welke medicatie je moet innemen en pas dit aan
+                  wanneer nodig.
                 </p>
               </div>
             </div>
@@ -31,8 +31,8 @@ export default class Functies extends Component {
               <div>
                 <h2>Community</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et
+                  Praat met andere Parkinsonpatiënten over je problemen of
+                  oplossingen en help elkaar.
                 </p>
               </div>
             </div>
@@ -44,8 +44,8 @@ export default class Functies extends Component {
               <div>
                 <h2>Oefeningen inplannen</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et
+                  Plan in wanneer je je oefeningen wilt doen en neem initiatief
+                  om de oefening te doen.
                 </p>
               </div>
             </div>
@@ -57,8 +57,8 @@ export default class Functies extends Component {
               <div>
                 <h2>Tips & Tricks</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et
+                  Bekijk verschillende tips & tricks die je kunnen helpen met
+                  Parkinson.
                 </p>
               </div>
             </div>
@@ -70,8 +70,8 @@ export default class Functies extends Component {
               <div>
                 <h2>Meedoen aan activiteiten</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et
+                  Neem deel aan activiteiten met andere Parkinsonpatiënten zoals
+                  bijvoorbeeld een Parkinson Café.
                 </p>
               </div>
             </div>
@@ -83,8 +83,8 @@ export default class Functies extends Component {
               <div>
                 <h2>Gemakkelijk overzicht</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et
+                  Bekijk wat je allemaal te doen hebt door de dag heen en zorg
+                  voor een goede planning.
                 </p>
               </div>
             </div>
