@@ -9,7 +9,7 @@ var config = {
   localRoot: __dirname + "/../public",
   remoteRoot: process.env.FTPPATH,
   deleteRemote: true,
-  include: ["*"]
+  include: ["*", ".htaccess"]
 };
 
 ftpDeploy.deploy(config, err => {
