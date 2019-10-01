@@ -1,22 +1,8 @@
 export default function sketch(p5) {
-  let outerElement = document.getElementsByClassName("Splash")[0];
+  let outerElement = document.getElementsByTagName("header")[0];
 
-  var body = document.body,
-    html = document.documentElement;
-  let width = Math.max(
-    body.scrollWidth,
-    body.offsetWidth,
-    html.clientWidth,
-    html.scrollWidth,
-    html.offsetWidth
-  );
-  let height = Math.max(
-    body.scrollHeight,
-    body.offsetHeight,
-    html.clientHeight,
-    html.scrollHeight,
-    html.offsetHeight
-  );
+  let width = Math.max(outerElement.scrollWidth, outerElement.offsetWidth);
+  let height = Math.max(outerElement.scrollHeight, outerElement.offsetHeight);
 
   p5.setup = function() {
     p5.noLoop();
@@ -33,20 +19,8 @@ export default function sketch(p5) {
   // }
 
   p5.windowResized = function() {
-    width = Math.max(
-      body.scrollWidth,
-      body.offsetWidth,
-      html.clientWidth,
-      html.scrollWidth,
-      html.offsetWidth
-    );
-    height = Math.max(
-      body.scrollHeight,
-      body.offsetHeight,
-      html.clientHeight,
-      html.scrollHeight,
-      html.offsetHeight
-    );
+    width = Math.max(outerElement.scrollWidth, outerElement.offsetWidth);
+    height = Math.max(outerElement.scrollHeight, outerElement.offsetHeight);
     actuallyDrawSomething();
   };
   // function windowResized() {
