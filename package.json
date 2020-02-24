@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "gatsby": "^2.8.0",
-    "gatsby-image": "^2.1.2",
+    "gatsby-image": "^2.2.41",
     "gatsby-plugin-htaccess": "^1.1.1",
     "gatsby-plugin-manifest": "^2.2.41",
     "gatsby-plugin-offline": "^2.1.1",
