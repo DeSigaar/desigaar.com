@@ -41,7 +41,7 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "react-p5-wrapper": "^2.0.0",
-    "sweetalert2": "^9.10.1"
+    "sweetalert2": "^9.10.2"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
