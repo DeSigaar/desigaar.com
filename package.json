@@ -34,7 +34,7 @@
     "gatsby-plugin-robots-txt": "^1.5.1",
     "gatsby-plugin-sass": "^2.3.10",
     "gatsby-plugin-sharp": "^2.6.17",
-    "gatsby-transformer-sharp": "^2.5.9",
+    "gatsby-transformer-sharp": "^2.5.14",
     "p5": "^1.1.9",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
