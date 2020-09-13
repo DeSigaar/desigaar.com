@@ -12285,10 +12285,10 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
-react-p5-wrapper@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/react-p5-wrapper/-/react-p5-wrapper-2.0.0.tgz#3c7882be616713a82b8c3121873dc6f8b3f1151c"
-  integrity sha512-oQvYEUAnAtquYoQvd7p5MdtzuSQX7cmcdDLJ3R22R4aSRiiUGyjicSYmY/m2aIVK6iegmA0s0/wuT1g3yl2MxQ==
+react-p5-wrapper@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/react-p5-wrapper/-/react-p5-wrapper-2.3.0.tgz#4a59d15aa07538170e98d48a983e51329d66f9d3"
+  integrity sha512-zwEIcGca3qPt6vsxGfwQchbkDjlbeK/KuGFLQoHjl7OSjD3A/FQqzE5RS6Y596ZYVydk9wMoPkAqVcLxkFbfJg==
 
 react-reconciler@^0.24.0:
   version "0.24.0"
