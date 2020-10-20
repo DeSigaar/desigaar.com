@@ -30,7 +30,7 @@
     "gatsby-plugin-htaccess": "^1.4.0",
     "gatsby-plugin-manifest": "^2.4.28",
     "gatsby-plugin-offline": "^3.2.34",
-    "gatsby-plugin-react-helmet": "^3.3.10",
+    "gatsby-plugin-react-helmet": "^3.3.14",
     "gatsby-plugin-robots-txt": "^1.5.3",
     "gatsby-plugin-sass": "^2.3.18",
     "gatsby-plugin-sharp": "^2.6.35",
