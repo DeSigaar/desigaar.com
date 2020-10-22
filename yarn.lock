@@ -1079,7 +1079,7 @@
     core-js-pure "^3.0.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.11.2", "@babel/runtime@^7.3.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.3.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
   version "7.12.1"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.12.1.tgz#b4116a6b6711d010b2dad3b7b6e43bf1b9954740"
   integrity sha512-J5AIf3vPj3UwXaAzb5j1xM4WAQDX3EMgemF8rjCP3SoW09LfRKAXQKt6CoVYl230P6iWdRcBbnLDDdnqWxZSCA==
@@ -6973,7 +6973,7 @@ gatsby-cli@^2.12.110:
     yargs "^15.4.1"
     yurnalist "^1.1.2"
 
-gatsby-core-utils@^1.3.19, gatsby-core-utils@^1.3.23:
+gatsby-core-utils@^1.3.23:
   version "1.3.23"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.3.23.tgz#5d99e86178b2aa3561f58fde4fdffbebecb0dd0c"
   integrity sha512-H6n6dDeRZ22HAJaBUIt5YjB/BSaE8Jq+kayMUv/YzL1RL2yFZ5lqcLwIL1OE2vWk1mQjMUBZCRxLODU0q1i3bQ==
@@ -14602,10 +14602,10 @@ svgo@1.3.2, svgo@^1.0.0:
     unquote "~1.1.1"
     util.promisify "~1.0.0"
 
-sweetalert2@^10.6.1:
-  version "10.6.1"
-  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-10.6.1.tgz#343d980858494bd0073ac8de9be57bf2365df316"
-  integrity sha512-5cIPtYldmZ+EljMVRd5ml9xT72STU+N4kk57nO0oECQmjkCsJypAcEdL+h045otoAd3t9962FtewJYSKyJxOFQ==
+sweetalert2@^10.7.0:
+  version "10.7.0"
+  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-10.7.0.tgz#73c82b7988175fede29358d3cc28bc83bbd8cda9"
+  integrity sha512-L/RwuY6JKs38nxnIjLnnNLnZ0+m2Bod+fXgNS2ewLI+9xzNJwUcPGv/Sh3wn2bmNNjcfuHTS7qZKwa7AIeDvNg==
 
 symbol-observable@^1.0.4, symbol-observable@^1.2.0:
   version "1.2.0"
