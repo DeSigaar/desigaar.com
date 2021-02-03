@@ -33,7 +33,7 @@
     "gatsby-plugin-react-helmet": "^3.7.0",
     "gatsby-plugin-robots-txt": "^1.5.5",
     "gatsby-plugin-sass": "^2.8.0",
-    "gatsby-plugin-sharp": "^2.11.1",
+    "gatsby-plugin-sharp": "^2.14.0",
     "gatsby-transformer-sharp": "^2.9.0",
     "p5": "^1.1.9",
     "prop-types": "^15.7.2",
