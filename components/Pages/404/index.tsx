@@ -23,7 +23,7 @@ export const Page404Content = (): JSX.Element => {
 						margin-left: 0.25rem;
 					`}
 				>
-					<Link type="button-link" href={t("navigation.home.url")} elevation="hovering">
+					<Link type="button-link" href={t("navigation.home.url")}>
 						{capitalizeFirst(t("phrases.back-to-safety"))}
 					</Link>
 				</span>
