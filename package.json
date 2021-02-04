@@ -1,65 +1,99 @@
 {
-  "name": "desigaar.com",
-  "private": true,
-  "version": "1.0.0",
-  "description": "Official website of De Sigaar",
-  "author": "De Sigaar",
-  "homepage": "http://desigaar.com/",
-  "keywords": [
-    "De",
-    "Sigaar",
-    "De Sigaar",
-    "DeSigaar"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/de-sigaar/desigaar.com.git"
-  },
-  "bugs": {
-    "url": "https://github.com/de-sigaar/desigaar.com/issues"
-  },
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
-    "serve": "gatsby serve"
-  },
-  "dependencies": {
-    "gatsby": "^2.29.1",
-    "gatsby-image": "^2.8.0",
-    "gatsby-plugin-htaccess": "^1.4.0",
-    "gatsby-plugin-manifest": "^2.6.1",
-    "gatsby-plugin-offline": "^3.7.0",
-    "gatsby-plugin-react-helmet": "^3.7.0",
-    "gatsby-plugin-robots-txt": "^1.5.5",
-    "gatsby-plugin-sass": "^2.8.0",
-    "gatsby-plugin-sharp": "^2.11.1",
-    "gatsby-transformer-sharp": "^2.9.0",
-    "p5": "^1.1.9",
-    "prop-types": "^15.7.2",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-helmet": "^6.1.0",
-    "react-p5-wrapper": "^2.3.0",
-    "sweetalert2": "^10.12.5"
-  },
-  "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.15.0",
-    "eslint-config-prettier": "^7.0.0",
-    "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-react": "^7.21.5",
-    "ftp-deploy": "^2.4.0",
-    "node-sass": "^4.14.1",
-    "prettier": "^2.2.1",
-    "prettier-eslint": "^12.0.0"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not op_mini all"
-  ]
+	"name": "desigaar.com",
+	"version": "1.0.0",
+	"private": true,
+	"description": "Official website of De Sigaar",
+	"keywords": [
+		"De",
+		"Sigaar",
+		"De Sigaar",
+		"DeSigaar"
+	],
+	"homepage": "https://desigaar.com/",
+	"bugs": {
+		"url": "https://github.com/desigaar/desigaar.com/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/desigaar/desigaar.com.git"
+	},
+	"license": "MIT",
+	"author": "De Sigaar <hello@desigaar.com> (https://desigaar.com)",
+	"contributors": [
+		"Max Altena <max@desigaar.com> (https://maxaltena.com/)"
+	],
+	"scripts": {
+		"analyze": "cross-env ANALYZE=true npm run build:ssr",
+		"analyze:browser": "cross-env BUNDLE_ANALYZE=browser npm run build:ssr",
+		"analyze:server": "cross-env BUNDLE_ANALYZE=server npm run build:ssr",
+		"build": "npm run build:ssr",
+		"build:ssg": "cross-env NODE_ENV=production next build && next export -o build",
+		"build:ssr": "cross-env NODE_ENV=production next build",
+		"dev": "cross-env NODE_ENV=development next",
+		"eslint": "eslint .",
+		"eslint:fix": "eslint . --fix",
+		"prettier": "prettier **/*",
+		"prettier:fix": "prettier **/* --write",
+		"preview": "netlify build && netlify deploy",
+		"sort-package-json": "sort-package-json",
+		"start": "cross-env NODE_ENV=production next start",
+		"test": "snyk test && npm run test:snyk",
+		"test:snyk": "snyk test"
+	},
+	"dependencies": {
+		"framer-motion": "^3.3.0",
+		"next": "^10.0.6",
+		"next-build-id": "^3.0.0",
+		"next-localization": "^0.11.0",
+		"next-pwa": "^5.0.5",
+		"react": "^17.0.1",
+		"react-dom": "^17.0.1",
+		"react-redux": "^7.2.2",
+		"react-toastify": "^7.0.3",
+		"redux": "^4.0.5",
+		"styled-components": "^5.2.1",
+		"sweetalert2": "^10.14.0"
+	},
+	"devDependencies": {
+		"@netlify/plugin-lighthouse": "^1.4.2",
+		"@netlify/plugin-nextjs": "^1.1.1",
+		"@netlify/plugin-sitemap": "^0.7.0",
+		"@next/bundle-analyzer": "^10.0.6",
+		"@types/node": "^14.14.25",
+		"@types/react": "^17.0.1",
+		"@types/react-dom": "^17.0.0",
+		"@types/react-redux": "^7.1.16",
+		"@types/styled-components": "^5.1.7",
+		"@typescript-eslint/eslint-plugin": "^4.14.2",
+		"@typescript-eslint/parser": "^4.14.2",
+		"autoprefixer": "^10.2.4",
+		"babel-plugin-styled-components": "^1.12.0",
+		"cross-env": "^7.0.3",
+		"eslint": "^7.19.0",
+		"eslint-config-prettier": "^7.2.0",
+		"eslint-plugin-prettier": "^3.3.1",
+		"eslint-plugin-react": "^7.22.0",
+		"husky": "^4.3.8",
+		"lint-staged": "^10.5.3",
+		"netlify-plugin-cache-nextjs": "^1.5.2",
+		"netlify-plugin-html-validate": "^0.2.0",
+		"netlify-plugin-image-optim": "^0.4.0",
+		"netlify-plugin-minify-html": "^0.3.0",
+		"netlify-plugin-snyk": "^1.3.0",
+		"netlify-plugin-subfont": "^5.0.6",
+		"netlify-plugin-submit-sitemap": "^0.2.3",
+		"postcss": "^8.2.4",
+		"prettier": "^2.2.1",
+		"redux-devtools-extension": "^2.13.8",
+		"sass": "^1.32.6",
+		"snyk": "^1.441.0",
+		"sort-package-json": "^1.48.1",
+		"tailwindcss": "^2.0.2",
+		"typescript": "^4.1.3"
+	},
+	"engines": {
+		"node": ">= 8.17.0",
+		"npm": ">= 6.12.1",
+		"yarn": ">= 1.19.1"
+	}
 }

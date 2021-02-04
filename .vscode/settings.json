@@ -1,39 +1,33 @@
 {
-  "editor.folding": true,
-  "editor.formatOnSave": false,
-  "editor.insertSpaces": true,
-  "editor.tabSize": 2,
-  "editor.wordWrap": "wordWrapColumn",
-  "editor.wordWrapColumn": 80,
-  "eslint.enable": true,
-  "eslint.autoFixOnSave": true,
-  "explorer.sortOrder": "default",
-  "files.autoSave": "onFocusChange",
-  "files.eol": "\n",
-  "files.exclude": {
-    "**/.DS_Store": true,
-    "**/._*": true,
-    "**/.editorconfig": true,
-    "**/.eslintrc": true,
-    "**/.gitignore": true,
-    "**/.prettierrc": true,
-    "**/.git": true,
-    "**/.vscode": true,
-    "**/.cache": true,
-    "**/.circleci": true,
-    "**/node_modules/**": true
-  },
-  "files.insertFinalNewline": true,
-  "files.trimFinalNewlines": true,
-  "javascript.format.enable": false,
-  "prettier.arrowParens": "avoid",
-  "prettier.bracketSpacing": true,
-  "prettier.eslintIntegration": true,
-  "prettier.jsxBracketSameLine": false,
-  "prettier.jsxSingleQuote": false,
-  "prettier.printWidth": 120,
-  "prettier.semi": true,
-  "prettier.singleQuote": false,
-  "prettier.tabWidth": 2,
-  "prettier.useTabs": false
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"files.eol": "\n",
+	"prettier.trailingComma": "all",
+	"prettier.arrowParens": "always",
+	"prettier.bracketSpacing": true,
+	"prettier.printWidth": 120,
+	"prettier.semi": true,
+	"prettier.singleQuote": true,
+	"prettier.tabWidth": 2,
+	"prettier.useTabs": true,
+	"prettier.endOfLine": "lf"
 }

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://desigaar.com/sitemap.xml
+Host: https://desigaar.com
