@@ -36,9 +36,7 @@
 		"prettier:fix": "prettier **/* --write",
 		"preview": "netlify build && netlify deploy",
 		"sort-package-json": "sort-package-json",
-		"start": "cross-env NODE_ENV=production next start",
-		"test": "snyk test && npm run test:snyk",
-		"test:snyk": "snyk test"
+		"start": "cross-env NODE_ENV=production next start"
 	},
 	"dependencies": {
 		"framer-motion": "^3.3.0",
@@ -79,14 +77,12 @@
 		"netlify-plugin-html-validate": "^0.2.0",
 		"netlify-plugin-image-optim": "^0.4.0",
 		"netlify-plugin-minify-html": "^0.3.0",
-		"netlify-plugin-snyk": "^1.3.0",
 		"netlify-plugin-subfont": "^5.0.6",
 		"netlify-plugin-submit-sitemap": "^0.2.3",
 		"postcss": "^8.2.4",
 		"prettier": "^2.2.1",
 		"redux-devtools-extension": "^2.13.8",
 		"sass": "^1.32.6",
-		"snyk": "^1.441.0",
 		"sort-package-json": "^1.48.1",
 		"tailwindcss": "^2.0.2",
 		"typescript": "^4.1.3"

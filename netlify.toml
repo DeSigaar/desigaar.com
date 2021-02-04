@@ -16,9 +16,6 @@ package = "netlify-plugin-image-optim"
 package = "netlify-plugin-minify-html"
 
 [[plugins]]
-package = "netlify-plugin-snyk"
-
-[[plugins]]
 package = "@netlify/plugin-sitemap"
   [plugins.inputs]
   buildDir = "out_publish"
