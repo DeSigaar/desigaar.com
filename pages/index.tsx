@@ -17,7 +17,7 @@ const HomePage = (): JSX.Element => {
 		<Page>
 			<Head title={`${name}: ${t("information.abstract")}`} useTitleTemplate={false} />
 
-			<Main fullPage spaced>
+			<Main spaced>
 				<PageHomeContent />
 			</Main>
 		</Page>

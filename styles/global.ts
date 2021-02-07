@@ -150,9 +150,17 @@ export const GlobalStyles = createGlobalStyle`
 
 	body {
 		font-family: ${({ theme }) => theme.fonts.DEFAULT};
-		color: ${({ theme }) => theme.colors.gray[900]};
-		background-color: ${({ theme }) => theme.colors.primary[100]};
+		color: ${({ theme }) => theme.colors.gray[800]};
+		background-color: ${({ theme }) => theme.colors.gray[100]};
+		background: linear-gradient(225deg, ${({ theme }) => theme.colors.gray[0]} 5%, ${({ theme }) =>
+	theme.colors.gray[200]} 95%) 0% 0% / 200% 200%;
+		animation: gradientMove 30000ms ease-in-out alternate-reverse infinite;
 		transition: color 150ms ease-in-out, background-color 150ms ease-in-out;
+
+		@keyframes gradientMove {
+			from { background-position: 0% 100%; }
+			to { background-position: 100% 0%; }
+		}
 	}
 
 	p {

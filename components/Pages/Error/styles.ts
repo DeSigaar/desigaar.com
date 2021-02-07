@@ -7,8 +7,8 @@ export const Wrapper = styled.div`
 	width: 100%;
 	grid-template-columns: repeat(1, minmax(10px, 1fr));
 	gap: 2.5rem;
-	margin-left: auto;
-	margin-right: auto;
+	margin-inline-start: auto;
+	margin-inline-end: auto;
 
 	@media ${device.tablet} {
 		width: 80%;
@@ -25,7 +25,7 @@ export const Label = styled.small`
 	display: block;
 	text-align: left;
 	font-family: ${({ theme }) => theme.fonts.mono};
-	margin-bottom: 0.5rem;
+	margin-block-end: 0.5rem;
 	font-size: 0.75rem;
 	line-height: 1rem;
 	font-weight: 600;
@@ -37,7 +37,7 @@ export const Label = styled.small`
 export const Heading = styled.h1`
 	display: block;
 	font-family: ${({ theme }) => theme.fonts.serif};
-	margin-bottom: 1rem;
+	margin-block-end: 1rem;
 	font-size: 1.5rem;
 	line-height: 2rem;
 	font-weight: 800;
@@ -55,7 +55,7 @@ export const Heading = styled.h1`
 export const Paragraph = styled.p`
 	display: block;
 	font-family: ${({ theme }) => theme.fonts.sans};
-	margin-bottom: 1.25rem;
+	margin-block-end: 1.25rem;
 	font-size: 1rem;
 	line-height: 1.5rem;
 	text-align: left;
@@ -70,8 +70,8 @@ export const Paragraph = styled.p`
 export const Image = styled.div`
 	width: 100%;
 	height: 100%;
-	padding-top: 12rem;
-	padding-bottom: 12rem;
+	padding-block-start: 12rem;
+	padding-block-end: 12rem;
 	border-radius: 0.5rem;
 	background-color: ${({ theme }) => theme.colors.gray[200]};
 	background-image: url("https://media.giphy.com/media/Fs0vJPEU1l6sU/giphy.gif");

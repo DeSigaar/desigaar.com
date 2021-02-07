@@ -22,10 +22,10 @@ export const Button = styled.a<StyledButtonProps>`
 	text-align: center;
 	color: #ffffff;
 	background: ${({ theme }) => theme.colors.primary.DEFAULT};
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
-	padding-left: 0.75rem;
-	padding-right: 0.75rem;
+	padding-block-start: 0.5rem;
+	padding-block-end: 0.5rem;
+	padding-inline-start: 0.75rem;
+	padding-inline-end: 0.75rem;
 
 	&:hover,
 	&:active,

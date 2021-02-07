@@ -10,8 +10,8 @@ export const Main = styled.main<StyledProps>`
 		fullPage &&
 		`
 		min-height: 100vh;
-		padding-top: 6rem;
-		padding-bottom: 6rem;
+		padding-block-start: 3rem;
+		padding-block-end: 3rem;
 		`}
 `;
 
@@ -20,13 +20,11 @@ export const MainContainer = styled(GlobalContainer)`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding-left: 1rem;
-	padding-right: 1rem;
-	padding-top: 6rem;
-	padding-bottom: 6rem;
-	margin-left: auto;
-	margin-right: auto;
+	padding-inline-start: 1rem;
+	padding-inline-end: 1rem;
+	padding-block-start: 3rem;
+	padding-block-end: 3rem;
+	margin-inline-start: auto;
+	margin-inline-end: auto;
 	min-height: 100vh;
-	padding-top: 6rem;
-	padding-bottom: 6rem;
 `;

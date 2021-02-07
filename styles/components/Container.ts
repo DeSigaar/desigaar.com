@@ -22,9 +22,6 @@ export const Container = styled.div`
 	@media ${device.laptopL} {
 		max-width: ${size.laptopL};
 	}
-	@media ${device.desktop} {
-		max-width: ${size.desktop};
-	}
 `;
 
 export default Container;

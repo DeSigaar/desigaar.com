@@ -20,8 +20,8 @@ export const PageErrorContent = ({ errorText }: Props): JSX.Element => {
 
 				<span
 					css={`
-						margin-top: 1rem;
-						margin-left: 0.25rem;
+						margin-block-start: 1rem;
+						margin-inline-start: 0.25rem;
 					`}
 				>
 					<Link type="button-link" href={t("navigation.home.url")}>
