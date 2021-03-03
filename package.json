@@ -52,7 +52,7 @@
 		"sweetalert2": "^10.15.5"
 	},
 	"devDependencies": {
-		"@netlify/plugin-lighthouse": "^1.4.2",
+		"@netlify/plugin-lighthouse": "^1.4.3",
 		"@netlify/plugin-nextjs": "^2.0.1",
 		"@netlify/plugin-sitemap": "^0.7.0",
 		"@next/bundle-analyzer": "^10.0.7",
