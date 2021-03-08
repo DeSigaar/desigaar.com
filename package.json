@@ -55,7 +55,7 @@
 		"@netlify/plugin-lighthouse": "^2.0.0",
 		"@netlify/plugin-nextjs": "^2.0.1",
 		"@netlify/plugin-sitemap": "^0.7.0",
-		"@next/bundle-analyzer": "^10.0.7",
+		"@next/bundle-analyzer": "^10.0.8",
 		"@types/node": "^14.14.32",
 		"@types/react": "^17.0.3",
 		"@types/react-dom": "^17.0.1",
