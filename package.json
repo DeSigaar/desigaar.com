@@ -48,7 +48,7 @@
 		"react-dom": "^17.0.1",
 		"react-redux": "^7.2.2",
 		"redux": "^4.0.5",
-		"styled-components": "^5.2.1",
+		"styled-components": "^5.3.6",
 		"sweetalert2": "^10.15.5"
 	},
 	"devDependencies": {
@@ -60,7 +60,7 @@
 		"@types/react": "^18.0.27",
 		"@types/react-dom": "^17.0.9",
 		"@types/react-redux": "^7.1.16",
-		"@types/styled-components": "^5.1.7",
+		"@types/styled-components": "^5.1.26",
 		"@typescript-eslint/eslint-plugin": "^4.33.0",
 		"@typescript-eslint/parser": "^4.33.0",
 		"babel-plugin-styled-components": "^1.12.0",
