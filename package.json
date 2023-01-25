@@ -71,7 +71,7 @@
 		"eslint-plugin-react": "^7.22.0",
 		"husky": "^8.0.3",
 		"lint-staged": "^13.1.0",
-		"netlify-plugin-cache-nextjs": "^1.5.2",
+		"netlify-plugin-cache-nextjs": "^1.6.1",
 		"netlify-plugin-html-validate": "^1.0.0",
 		"netlify-plugin-image-optim": "^0.4.0",
 		"netlify-plugin-minify-html": "^0.3.1",
