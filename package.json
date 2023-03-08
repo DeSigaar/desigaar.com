@@ -39,7 +39,7 @@
 		"start": "cross-env NODE_ENV=production next start"
 	},
 	"dependencies": {
-		"framer-motion": "^10.1.0",
+		"framer-motion": "^10.2.3",
 		"next": "^13.2.3",
 		"next-build-id": "^3.0.0",
 		"next-localization": "^0.12.0",
