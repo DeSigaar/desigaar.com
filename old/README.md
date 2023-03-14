@@ -1,5 +1,7 @@
 # [desigaar.com][link:desigaar]
 
+###### [![Netlify status][img:netlify-status]][link:netlify-status]
+
 ###### [![Version][img:github-version]][link:github-version] [![Issues][img:github-issues]][link:github-issues] [![Pull requests][img:github-prs]][link:github-prs] [![License][img:github-license]][link:github-license]
 
 ###### [![Watchers][img:watchers]][link:watchers] [![Stars][img:stars]][link:stars] [![Forks][img:forks]][link:forks]
@@ -8,6 +10,8 @@
 
 Find it on [desigaar.com][link:desigaar]!
 
+[img:netlify-status]: https://img.shields.io/netlify/65056ee1-5040-4667-88cc-0dc542c20a6d
+[link:netlify-status]: https://app.netlify.com/sites/desigaar/deploys
 [img:github-version]: https://img.shields.io/github/package-json/v/DeSigaar/desigaar.com
 [link:github-version]: https://github.com/DeSigaar/desigaar.com
 [img:github-issues]: https://img.shields.io/github/issues/DeSigaar/desigaar.com

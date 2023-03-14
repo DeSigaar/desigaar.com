@@ -1,28 +1,4 @@
-# General
 node_modules
-.eslintignore
-.prettierignore
-.gitignore
-.editorconfig
-.browserslistrc
-.htaccess
-*.min.*
-*.yml
-*.pdf
-*.otf
-*.jpg
-*.gif
-*.png
-.netlify
 .next
-public
-.snyk
-.babelrc
-.huskyrc
-.lintstagedrc
-
-# Project specific
-dist
 out
-out_publish
-out_functions
+

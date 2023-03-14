@@ -1,9 +1,10 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
 # dependencies
-node_modules
+/node_modules
 /.pnp
 .pnp.js
+
+# testing
+/coverage
 
 # next.js
 /.next/
@@ -11,6 +12,10 @@ node_modules
 
 # production
 /build
+/out_publish/
+/out_functions/
+/public/sw.js
+/public/workbox-*
 
 # misc
 .DS_Store
@@ -22,19 +27,13 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
-.env
-.env.development
-.env.test
-.env.production
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-public/robots.txt
-public/sitemap.xml
-public/fallback-*
-public/sw*
-public/workbox-*
-
+# vercel
 .vercel
+
+# Local Netlify folder
+.netlify
