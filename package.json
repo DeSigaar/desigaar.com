@@ -1,121 +1,57 @@
 {
   "name": "desigaar.com",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "private": true,
-  "description": "Official website of De Sigaar",
-  "keywords": [
-    "De",
-    "Sigaar",
-    "De Sigaar",
-    "DeSigaar"
-  ],
-  "homepage": "https://desigaar.com/",
-  "bugs": {
-    "url": "https://github.com/desigaar/desigaar.com/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/desigaar/desigaar.com.git"
-  },
-  "author": {
-    "name": "De Sigaar",
-    "email": "hello@desigaar.com",
-    "url": "https://desigaar.com"
-  },
-  "contributors": [
-    {
-      "name": "Max Altena",
-      "email": "max@maxaltena.com",
-      "url": "https://maxaltena.com"
-    }
-  ],
-  "license": "MIT",
-  "browserslist": {
-    "production": [
-      ">0.3%",
-      "not ie 11",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
   "scripts": {
     "dev": "next dev",
-    "build": "next build && yarn postbuild",
-    "postbuild": "next-sitemap",
-    "clean": "rimraf --no-glob ./.next ./out ./tsconfig.tsbuildinfo",
+    "build": "next build",
+    "build:analyze": "cross-env ANALYZE=true npm run build:production",
+    "build:development": "cross-env NODE_ENV='development' npm run build",
+    "build:export": "npm run build && npm run export",
+    "build:production": "cross-env NODE_ENV='production' npm run build",
+    "build:test": "cross-env NODE_ENV='test' npm run build",
+    "dev:debug": "cross-env NODE_OPTIONS='--inspect' npm run dev",
     "start": "next start",
-    "analyze": "cross-env NODE_ENV=production ANALYZE=true next build",
-    "analyze:server": "cross-env NODE_ENV=production BUNDLE_ANALYZE=server next build",
-    "analyze:browser": "cross-env NODE_ENV=production BUNDLE_ANALYZE=browser next build",
-    "bundle:analyze": "cross-env ANALYZE=true yarn build",
-    "typecheck": "tsc --project ./tsconfig.json --noEmit",
-    "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
-    "fix:staged-files": "lint-staged --allow-empty",
-    "fix:all-files": "eslint . --ext .ts,.tsx,.js,.jsx --fix",
-    "prepare": "is-ci || yarn husky install",
-    "clear:node_modules": "rimraf '**/node_modules'",
-    "sort-package-json": "sort-package-json"
-  },
-  "devDependencies": {
-    "@next/bundle-analyzer": "11.0.1",
-    "@types/node": "16.4.10",
-    "@types/react": "17.0.15",
-    "@types/react-dom": "17.0.9",
-    "@types/uuid": "^8.3.1",
-    "@typescript-eslint/eslint-plugin": "4.29.0",
-    "@typescript-eslint/parser": "4.29.0",
-    "cross-env": "^7.0.3",
-    "eslint": "^7.32.0",
-    "eslint-config-next": "11.0.1",
-    "eslint-config-prettier": "8.3.0",
-    "eslint-plugin-import": "2.23.4",
-    "eslint-plugin-jsx-a11y": "6.4.1",
-    "eslint-plugin-prettier": "3.4.0",
-    "eslint-plugin-react": "7.24.0",
-    "eslint-plugin-react-hooks": "4.2.0",
-    "husky": "^7.0.1",
-    "is-ci": "^3.0.0",
-    "lint-staged": "^11.1.1",
-    "next-sitemap": "^1.6.140",
-    "npm-run-all": "4.1.5",
-    "prettier": "^2.3.2",
-    "rimraf": "^3.0.2",
-    "shell-quote": "^1.7.2",
-    "sort-package-json": "^1.50.0",
-    "symlink-dir": "5.0.1",
-    "sync-directory": "2.2.22",
-    "typescript": "4.3.5"
+    "export": "next export",
+    "sort-package-json": "sort-package-json",
+    "lint": "npm run lint:typescript && npm run lint:eslint && npm run lint:prettier",
+    "lint:eslint": "eslint . --ext .js,.jsx,.mjs,.cjs,.ts,.tsx",
+    "lint:eslint:fix": "npm run lint:eslint -- --fix",
+    "lint:fix": "npm run lint:typescript && npm run lint:eslint:fix && npm run lint:prettier:fix",
+    "lint:prettier": "prettier . --check --ignore-unknown",
+    "lint:prettier:fix": "npm run lint:prettier -- --write",
+    "lint:typescript": "tsc --noEmit"
   },
   "dependencies": {
-    "@chakra-ui/icons": "^1.0.14",
-    "@chakra-ui/react": "1.6.5",
-    "@chakra-ui/system": "^1.7.1",
-    "@emotion/react": "11.4.0",
-    "@emotion/styled": "11.3.0",
-    "@fontsource/fira-code": "^4.5.0",
-    "@fontsource/inter": "^4.5.0",
-    "@notionhq/client": "^0.2.3",
-    "framer-motion": "4.1.17",
-    "next": "11.0.1",
-    "next-i18next": "^8.5.5",
-    "next-images": "^1.8.1",
-    "next-pwa": "^5.2.24",
-    "next-seo": "^4.26.0",
-    "next-themes": "^0.0.15",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-icons": "^4.2.0",
-    "uuid": "^8.3.2",
-    "webpack": "^5.48.0"
+    "next": "^13.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^13.2.4",
+    "@total-typescript/ts-reset": "^0.4.2",
+    "@types/eslint": "^8.21.1",
+    "@types/node": "^18.15.0",
+    "@types/prettier": "^2.7.2",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
+    "@typescript-eslint/parser": "^5.54.1",
+    "eslint": "^8.36.0",
+    "eslint-config-next": "^13.2.4",
+    "eslint-config-prettier": "^8.7.0",
+    "lint-staged": "^13.2.0",
+    "prettier": "^2.8.4",
+    "sort-package-json": "^2.4.1",
+    "typescript": "^4.9.5"
   },
   "engines": {
-    "node": ">=14",
-    "yarn": ">=1",
-    "npm": "please-use-yarn"
+    "node": "^18",
+    "pnpm": "^7"
+  },
+  "packageManager": "pnpm@7.29.1",
+  "volta": {
+    "node": "18.15.0"
   }
 }
