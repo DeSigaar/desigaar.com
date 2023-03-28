@@ -53,7 +53,7 @@
 	},
 	"devDependencies": {
 		"@netlify/plugin-lighthouse": "^4.0.7",
-		"@netlify/plugin-nextjs": "^4.32.2",
+		"@netlify/plugin-nextjs": "^4.33.0",
 		"@netlify/plugin-sitemap": "^0.8.1",
 		"@next/bundle-analyzer": "^13.2.4",
 		"@types/node": "^18.15.10",
