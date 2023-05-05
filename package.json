@@ -49,7 +49,7 @@
 		"react-redux": "^8.0.5",
 		"redux": "^4.2.1",
 		"styled-components": "^5.3.10",
-		"sweetalert2": "^11.7.3"
+		"sweetalert2": "^11.7.5"
 	},
 	"devDependencies": {
 		"@netlify/plugin-lighthouse": "^4.1.1",
