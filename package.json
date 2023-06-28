@@ -48,7 +48,7 @@
 		"react-dom": "^18.2.0",
 		"react-redux": "^8.1.1",
 		"redux": "^4.2.1",
-		"styled-components": "^5.3.11",
+		"styled-components": "^6.0.0",
 		"sweetalert2": "^11.7.12"
 	},
 	"devDependencies": {
