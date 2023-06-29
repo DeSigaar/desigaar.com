@@ -70,7 +70,7 @@
 		"eslint-plugin-prettier": "^4.2.1",
 		"eslint-plugin-react": "^7.32.2",
 		"husky": "^8.0.3",
-		"lint-staged": "^13.2.2",
+		"lint-staged": "^13.2.3",
 		"netlify-plugin-cache-nextjs": "^1.6.1",
 		"netlify-plugin-html-validate": "^1.1.1",
 		"netlify-plugin-image-optim": "^0.4.0",
