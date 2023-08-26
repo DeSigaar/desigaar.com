@@ -1,5 +1,0 @@
-{
-	"*": "npm run prettier:fix",
-	"*.{js,jsx,ts,tsx}": "npm run eslint:fix",
-	"package.json": "npm run sort-package-json"
-}
